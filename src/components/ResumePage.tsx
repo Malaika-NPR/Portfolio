@@ -1,9 +1,6 @@
-import { motion } from 'motion/react';
 import {
   Mail,
   Linkedin,
-  MapPin,
-  Calendar,
   ExternalLink,
   GraduationCap,
   Code,
@@ -11,6 +8,7 @@ import {
   Wrench,
   FolderOpen
 } from 'lucide-react';
+import { motion } from 'motion/react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
@@ -198,10 +196,6 @@ export function ResumePage() {
                     <div>
                       <h3 className="font-medium text-primary font-serif">{exp.title}</h3>
                       <p className="font-serif">{exp.company}</p>
-                    </div>
-                    <div className="text-sm text-muted-foreground font-serif">
-                      <div>{exp.location}</div>
-                      <div>{exp.period}</div>
                     </div>
                   </div>
                   <ul className="mt-3 ml-4 space-y-2">
